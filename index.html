@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Web Showroom - Demostración de desarrollo web profesional">
+  <meta name="author" content="Curso Desarrollo Web">
+  <title>Web Showroom | Desarrollo Web</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Encabezado principal del sitio -->
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <h1 class="logo">Web Showroom</h1>
+
+        <!-- Botón de menú móvil -->
+        <button class="menu-toggle" aria-label="Abrir menú de navegación" aria-expanded="false">
+          <span class="hamburger"></span>
+        </button>
+
+        <!-- Navegación principal -->
+        <nav class="nav" aria-label="Navegación principal">
+          <ul class="nav-list">
+            <li><a href="#inicio" class="nav-link">Inicio</a></li>
+            <li><a href="#servicios" class="nav-link">Servicios</a></li>
+            <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+            <li><a href="#contacto" class="nav-link">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <!-- Control de tema -->
+        <button class="theme-toggle" aria-label="Cambiar tema de color">
+          <span class="theme-icon">🌙</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Contenido principal -->
+  <main class="main">
+    <!-- Sección Hero -->
+    <section id="inicio" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h2 class="hero-title">Bienvenido al Curso de Desarrollo Web</h2>
+          <p class="hero-subtitle">Aprende HTML semántico, CSS moderno y JavaScript interactivo</p>
+          <a href="#servicios" class="btn btn-primary">Explorar servicios</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de Servicios -->
+    <section id="servicios" class="services">
+      <div class="container">
+        <h2 class="section-title">Nuestros Servicios</h2>
+        <p class="section-description">Soluciones web modernas y profesionales</p>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-icon">🎨</div>
+            <h3 class="service-title">Diseño Web</h3>
+            <p class="service-description">Interfaces modernas y atractivas que capturan la esencia de tu marca.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">💻</div>
+            <h3 class="service-title">Desarrollo Frontend</h3>
+            <p class="service-description">Código limpio y eficiente con las últimas tecnologías web.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">📱</div>
+            <h3 class="service-title">Responsive Design</h3>
+            <p class="service-description">Sitios web que se adaptan perfectamente a cualquier dispositivo.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">⚡</div>
+            <h3 class="service-title">Optimización</h3>
+            <p class="service-description">Rendimiento excepcional y tiempos de carga ultrarrápidos.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de Proyectos -->
+    <section id="proyectos" class="projects">
+      <div class="container">
+        <h2 class="section-title">Proyectos Destacados</h2>
+        <p class="section-description">Ejemplos de nuestro trabajo reciente</p>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-image">
+              <div class="project-placeholder">🖼️</div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">E-commerce Moderno</h3>
+              <p class="project-description">Tienda online con carrito de compras y pasarela de pago integrada.</p>
+              <div class="project-tags">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+                <span class="tag">JavaScript</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image">
+              <div class="project-placeholder">🖼️</div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Portfolio Creativo</h3>
+              <p class="project-description">Sitio web personal con animaciones y diseño interactivo.</p>
+              <div class="project-tags">
+                <span class="tag">Responsive</span>
+                <span class="tag">Animations</span>
+                <span class="tag">Grid</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-image">
+              <div class="project-placeholder">🖼️</div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Dashboard Corporativo</h3>
+              <p class="project-description">Panel de control con gráficos y visualización de datos en tiempo real.</p>
+              <div class="project-tags">
+                <span class="tag">SPA</span>
+                <span class="tag">API</span>
+                <span class="tag">Charts</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="contact">
+      <div class="container">
+        <h2 class="section-title">Contáctanos</h2>
+        <p class="section-description">¿Tienes un proyecto en mente? Hablemos</p>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name" class="form-label">Nombre completo</label>
+            <input type="text" id="name" name="name" class="form-input" required aria-required="true"
+              placeholder="Tu nombre">
+            <span class="form-error" aria-live="polite"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" id="email" name="email" class="form-input" required aria-required="true"
+              placeholder="tu@email.com">
+            <span class="form-error" aria-live="polite"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="subject" class="form-label">Asunto</label>
+            <select id="subject" name="subject" class="form-input" required aria-required="true">
+              <option value="">Selecciona un asunto</option>
+              <option value="diseño">Diseño Web</option>
+              <option value="desarrollo">Desarrollo</option>
+              <option value="consulta">Consulta General</option>
+              <option value="otro">Otro</option>
+            </select>
+            <span class="form-error" aria-live="polite"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="message" class="form-label">Mensaje</label>
+            <textarea id="message" name="message" class="form-input" rows="5" required aria-required="true"
+              placeholder="Cuéntanos sobre tu proyecto..."></textarea>
+            <span class="form-error" aria-live="polite"></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+        </form>
+
+        <div class="form-success" id="formSuccess" role="alert" aria-live="polite"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3 class="footer-title">Web Showroom</h3>
+          <p class="footer-text">Ejemplo de desarrollo web profesional para fines educativos.</p>
+        </div>
+
+        <div class="footer-section">
+          <h3 class="footer-title">Enlaces Rápidos</h3>
+          <ul class="footer-links">
+            <li><a href="#inicio" class="footer-link">Inicio</a></li>
+            <li><a href="#servicios" class="footer-link">Servicios</a></li>
+            <li><a href="#proyectos" class="footer-link">Proyectos</a></li>
+            <li><a href="#contacto" class="footer-link">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3 class="footer-title">Contacto</h3>
+          <ul class="footer-links">
+            <li>📧 info@webshowroom.com</li>
+            <li>📱 +34 123 456 789</li>
+            <li>📍 Barcelona, España</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Web Showroom. Proyecto educativo de desarrollo web.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script principal -->
+  <script src="script.js"></script>
+</body>
+
+</html>
